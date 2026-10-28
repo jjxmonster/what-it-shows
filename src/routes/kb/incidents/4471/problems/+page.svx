@@ -4,7 +4,7 @@ title: '#4471 holds more than one problem'
 owner: JT
 status: open
 reviewed: 2026-10-28
-signature: JT
+signature: "v1.eyJzdWIiOiIxMzIxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMTY3MDIsImV4cCI6MTc5MzMwMzEwMn0.G9IbzADmdIqd1vkWcVWcSjIsrWBNUpO5mHleJS_gVf8"
 ---
 
 <script>
@@ -29,4 +29,4 @@ One ticket was filed. The export contains every cause below. A cause other than 
 
 **hint.** booking-v3 prints `MM/DD/YYYY` under the date field. On a day-first tenant, people type what that hint says, and the form reads the date the tenant's way. That is a different bug from the parser. It reached #4471 because the subject line matched an open ticket.
 
-<RenderStamp signature="JT" />
+<RenderStamp signature="v1.eyJzdWIiOiIxMzIxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMTY3MDIsImV4cCI6MTc5MzMwMzEwMn0.G9IbzADmdIqd1vkWcVWcSjIsrWBNUpO5mHleJS_gVf8" />
