@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 holds more than one problem'
 owner: JT
-status: open
+status: closed
 reviewed: 2026-10-28
 signature: "v1.eyJzdWIiOiIxMzIxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMTY3MDIsImV4cCI6MTc5MzMwMzEwMn0.G9IbzADmdIqd1vkWcVWcSjIsrWBNUpO5mHleJS_gVf8"
 ---
@@ -18,6 +18,14 @@ signature: "v1.eyJzdWIiOiIxMzIxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpY
 <Callout kind="warn">
 One ticket was filed. The export contains every cause below. A cause other than the one this ticket is for has no ticket of its own.
 </Callout>
+
+## Engineering update
+
+#4471 closed 05 Oct.
+
+**parser.** Fixed. `fix(dates): parse dd/mm for eu locales`
+
+**hint.** Won't fix. booking-v3 form retired.
 
 ## Causes in the merge
 
