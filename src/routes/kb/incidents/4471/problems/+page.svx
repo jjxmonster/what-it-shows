@@ -1,0 +1,32 @@
+---
+layout: runbook
+title: '#4471 holds more than one problem'
+owner: JT
+status: open
+reviewed: 2026-10-28
+signature: JT
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+#4471 was marked known, with one fix queued: the parser reads dates month first, and day-first tenants write the day first. The reports merged into it are not one cause. Subject lines matched, so the desk merged them. The table is the split, counted from the export, one row per report id.
+
+<Callout kind="warn">
+One ticket was filed. The export contains every cause below. A cause other than the one this ticket is for has no ticket of its own.
+</Callout>
+
+## Causes in the merge
+
+<CauseTable ticket={4471} />
+
+## What the causes are
+
+**parser.** The shared parser reads every date month first. A day-first tenant's dates come out flipped. That is the cause most of these reports share, so it is what #4471 is. Reports the desk read as a one-day move stay in that count. The table footnotes them.
+
+**hint.** booking-v3 prints `MM/DD/YYYY` under the date field. On a day-first tenant, people type what that hint says, and the form reads the date the tenant's way. That is a different bug from the parser. It reached #4471 because the subject line matched an open ticket.
+
+<RenderStamp signature="JT" />
